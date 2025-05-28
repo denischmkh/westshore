@@ -10,7 +10,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-SMTP_SERVER = 'smtp.gmail.com'          # или smtp.yandex.ru, smtp.mail.ru и т.п.
+SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 EMAIL_FROM = 'osvspotfixtures@gmail.com'
 EMAIL_PASSWORD = 'psws gkmr xskb zvgp'
@@ -32,9 +32,9 @@ def send_notification_email(subject, body):
             server.starttls()
             server.login(EMAIL_FROM, EMAIL_PASSWORD)
             server.send_message(msg)
-        print("📧 Email has been send successfully.")
+        print("Email has been send successfully.", flush=True)
     except Exception as e:
-        print(f"❌ Error while sending email: {e}")
+        print(f"Error while sending email: {e}", flush=True)
 while True:
     browser = Chrome()
 
@@ -51,15 +51,15 @@ while True:
     for row in rows:
         tds = [el.text for el in row.find_elements(by=By.XPATH, value='./td')]
         date, vessel, charterer, scope_of_work, asset, period, onhire, rate, *other = tds
-        print(f'Date: {date}')
-        print(f'Vessel: {vessel}')
-        print(f'Charterer: {charterer}')
-        print(f'Scope of Work: {scope_of_work}')
-        print(f'Asset: {asset}')
-        print(f'Period: {period}')
-        print(f'Onhire: {onhire}')
-        print(f'Rate: {rate}')
-        print(f'')
+        print(f'Date: {date}', flush=True)
+        print(f'Vessel: {vessel}', flush=True)
+        print(f'Charterer: {charterer}', flush=True)
+        print(f'Scope of Work: {scope_of_work}', flush=True)
+        print(f'Asset: {asset}', flush=True)
+        print(f'Period: {period}', flush=True)
+        print(f'Onhire: {onhire}', flush=True)
+        print(f'Rate: {rate}', flush=True)
+        print(f'', flush=True)
         record, created = CharterRecordBraemaroffshore.objects.get_or_create(
             date=date,
             vessel=vessel,
@@ -82,9 +82,9 @@ while True:
                 f"Onhire: {onhire}\n"
                 f"Rate: {rate}\n"
             )
-            print(f"✅ New Record: {vessel}")
+            print(f"New Record: {vessel}", flush=True)
             send_notification_email(subject, body)
         else:
-            print(f"ℹ️ Already exists: {vessel}")
+            print(f"Already exists: {vessel}", flush=True)
     browser.close()
     time.sleep(10800)
