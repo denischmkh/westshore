@@ -1,0 +1,72 @@
+Date: 26/05/25
+Vessel: PACIFIC DISPATCH
+Charterer: BP UK
+Scope of Work: Prelay Noble Innovator, D/D 14
+Comm.: 27/05/25
+Rate: RNR
+
+Date: 26/05/25
+Vessel: NJORD VIKING
+Charterer: Petrofac
+Scope of Work: R/M Cosl Innovator(+WROV), D/D 14
+Comm.: 27/05/25
+Rate: GBP 75000
+
+Date: 26/05/25
+Vessel: LOKE VIKING
+Charterer: Petrofac
+Scope of Work: R/M Cosl Innovator, D/D 14
+Comm.: 27/05/25
+Rate: GBP 75000
+
+Date: 24/05/25
+Vessel: SKANDI HERA
+Charterer: Taqa
+Scope of Work: R/M Noble Patriot, D/D 10
+Comm.: 25/05/25
+Rate: GBP 150000
+
+Date: 24/05/25
+Vessel: SKANDI JUPITER
+Charterer: Taqa
+Scope of Work: R/M Noble Patriot, D/D 10
+Comm.: 25/05/25
+Rate: GBP 150000
+
+Date: 24/05/25
+Vessel: SKANDI MERCURY
+Charterer: Taqa
+Scope of Work: R/M Noble Patriot, D/D 10
+Comm.: 25/05/25
+Rate: GBP 150000
+
+Date: 23/05/25
+Vessel: SKANDI HANDLER
+Charterer: OMC
+Scope of Work: R/M Prospector 1, D/D 14
+Comm.: 25/05/25
+Rate: EUR 100000
+
+Date: 23/05/25
+Vessel: EDDA FRAM
+Charterer: Aker BP
+Scope of Work: Supply duties, D/D 14
+Comm.: 23/05/25
+Rate: NOK 475000
+
+Date: 22/05/25
+Vessel: ACE KRISTIANSAND
+Charterer: Repsol UK
+Scope of Work: Supply duties, D/D 14
+Comm.: 23/05/25
+Rate: RNR
+
+Date: 21/05/25
+Vessel: SKANDI MINDER
+Charterer: BP UK
+Scope of Work: R/M Ocean Greatwhite, D/D 14
+Comm.: 21/05/25
+Rate: GBP 175000
+
+
+Process finished with exit code 0
